@@ -1,0 +1,16 @@
+class Solution {
+public:
+   bool isSubsequence(string a, string b) {
+      int x = 0 , y = 0;
+      while(y < a.size() && x < b.size())
+      {
+        if(a[y] == b[x])
+          y++;
+        
+       x++;
+      }
+      
+      if(y >= a.size()) return true;
+      return false;
+    }
+};
